@@ -11,5 +11,10 @@ abstract class AppStrings {
       password = 'Password',
       examplePassword = '************',
       alreadyHaveAnAccount = "Already have an account? ",
-      signIn = 'Sign in';
+      signIn = 'Sign in',
+//!sign In account
+
+      signInAccount = 'S I G N  I N  A C C O U N T',
+      dontHaveAnAccount = "Don't have an account? ",
+      createOneNow = 'Create One Now';
 }

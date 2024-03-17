@@ -1,25 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:lezioni/core/functions/navigation.dart';
 import 'package:lezioni/core/utils/app_colors.dart';
 import 'package:lezioni/core/utils/app_strings.dart';
 
 class AlreadyHaveAccountWidget extends StatelessWidget {
   const AlreadyHaveAccountWidget({
     super.key,
+    required this.text1,
+    required this.text2,
+    required this.onTap,
   });
-
+  final Function() onTap;
+  final String text1, text2;
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          AppStrings.alreadyHaveAnAccount,
+          text1,
           style: TextStyle(color: Colors.white),
         ),
-        Text(
-          AppStrings.signIn,
-          style: TextStyle(
-            color: AppColors.gradientTwo,
+        GestureDetector(
+          onTap: onTap,
+          child: Text(
+            text2,
+            style: TextStyle(
+              color: AppColors.gradientTwo,
+            ),
           ),
         )
       ],

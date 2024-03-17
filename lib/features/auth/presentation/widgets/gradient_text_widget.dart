@@ -7,11 +7,12 @@ import 'package:simple_gradient_text/simple_gradient_text.dart';
 class GradientTextWidget extends StatelessWidget {
   const GradientTextWidget({
     super.key,
+    required this.text,
   });
-
+  final String text;
   @override
   Widget build(BuildContext context) {
-    return GradientText(AppStrings.createYourAccount,
+    return GradientText(text,
         textAlign: TextAlign.center,
         style: CustomTextStyle.inter500Style24,
         colors: [

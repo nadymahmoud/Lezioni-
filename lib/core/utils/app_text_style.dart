@@ -20,4 +20,10 @@ abstract class CustomTextStyle {
     color: AppColors.lightwhite,
     fontFamily: 'Inter',
   );
+  static final exo600Style16 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+    color: Color(0xffFFFFFF),
+    // fontFamily: 'Exo',
+  );
 }

@@ -10,8 +10,8 @@ import 'package:lezioni/features/auth/presentation/widgets/create_account_and_si
 import 'package:lezioni/features/auth/presentation/widgets/custom_text_field_widget.dart';
 import 'package:lezioni/features/auth/presentation/widgets/gradient_text_widget.dart';
 
-class CreateAccountView extends StatelessWidget {
-  const CreateAccountView({super.key});
+class SignInView extends StatelessWidget {
+  const SignInView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,19 +29,8 @@ class CreateAccountView extends StatelessWidget {
               shrinkWrap: true,
               children: [
                 const GradientTextWidget(
-                  text: AppStrings.createYourAccount,
+                  text: AppStrings.signInAccount,
                 ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  AppStrings.name,
-                  style: CustomTextStyle.exo600Style16,
-                ),
-                const SizedBox(
-                  height: 11,
-                ),
-                const CustomTextFieldWidget(),
                 const SizedBox(
                   height: 20,
                 ),
@@ -75,17 +64,17 @@ class CreateAccountView extends StatelessWidget {
                   height: 20,
                 ),
                 const CreateAndSignInWidget(
-                  text: AppStrings.createAccount,
+                  text: AppStrings.signIn,
                 ),
                 const SizedBox(
                   height: 20,
                 ),
                 AlreadyHaveAccountWidget(
                   onTap: () {
-                    customRquiredPush(context, '/sign_in');
+                    customRquiredPush(context, '/');
                   },
-                  text1: AppStrings.alreadyHaveAnAccount,
-                  text2: AppStrings.signIn,
+                  text1: AppStrings.dontHaveAnAccount,
+                  text2: AppStrings.createOneNow,
                 ),
               ],
             ),
