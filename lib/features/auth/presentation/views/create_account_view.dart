@@ -18,20 +18,83 @@ class CreateAccountView extends StatelessWidget {
           Image.asset(fit: BoxFit.cover, Assets.imagesBackgroundImage),
           Positioned(
               child: Center(
-                  child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              GradientText(AppStrings.createYourAccount, colors: [
-                AppColors.gradientOne,
-                AppColors.gradientTwo,
-              ]),
-              const SizedBox(
-                height: 30,
-              ),
-            ],
+                  child: SizedBox(
+            width: 550,
+            child: ListView(
+              shrinkWrap: true,
+              children: [
+                GradientText(AppStrings.createYourAccount,
+                    textAlign: TextAlign.center,
+                    style: CustomTextStyle.inter500Style24,
+                    colors: [
+                      AppColors.gradientOne,
+                      AppColors.gradientTwo,
+                    ]),
+                const SizedBox(
+                  height: 30,
+                ),
+                Text(
+                  AppStrings.name,
+                  style: TextStyle(color: Colors.white),
+                ),
+                SizedBox(
+                  height: 11,
+                ),
+                CustomTextFieldWidget(),
+                Text(
+                  AppStrings.emailAddress,
+                  style: TextStyle(color: Colors.white),
+                ),
+                SizedBox(
+                  height: 11,
+                ),
+                CustomTextFieldWidget(
+                  hintText: AppStrings.exampleEmail,
+                ),
+                Text(
+                  AppStrings.password,
+                  style: TextStyle(color: Colors.white),
+                ),
+                SizedBox(
+                  height: 11,
+                ),
+                CustomTextFieldWidget(
+                  hintText: AppStrings.examplePassword,
+                )
+              ],
+            ),
           )))
         ],
       ),
     );
   }
+}
+
+class CustomTextFieldWidget extends StatelessWidget {
+  const CustomTextFieldWidget({super.key, this.hintText});
+  final String? hintText;
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 519,
+      height: 60,
+      child: TextField(
+        decoration: InputDecoration(
+          filled: true,
+          fillColor: AppColors.lightwhite,
+          hintText: hintText ?? AppStrings.fullName,
+          hintStyle: CustomTextStyle.inter400Style20,
+          border: getBorderStyle(),
+          enabledBorder: getBorderStyle(),
+          focusedBorder: getBorderStyle(),
+        ),
+      ),
+    );
+  }
+}
+
+OutlineInputBorder getBorderStyle() {
+  return OutlineInputBorder(
+    borderRadius: BorderRadius.circular(8),
+  );
 }

@@ -8,7 +8,7 @@ abstract class AppStrings {
       emailAddress = 'Email address',
       exampleEmail = 'you@example.com',
       password = 'Password',
-      examplePassword = '********',
+      examplePassword = '************',
       alreadyHaveAnAccount = "Already have an account? ",
       signIn = 'Sign in';
 }
