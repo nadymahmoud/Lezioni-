@@ -4,6 +4,7 @@ abstract class AppStrings {
 //!Create Your Account
   static const String createYourAccount = "C R E A T E  Y O U R  A C C O U N T",
       name = "Name",
+      createAccount = 'Create Account',
       fullName = "Full Name",
       emailAddress = 'Email address',
       exampleEmail = 'you@example.com',

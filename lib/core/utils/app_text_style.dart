@@ -14,4 +14,10 @@ abstract class CustomTextStyle {
     color: AppColors.darkPurple,
     fontFamily: 'Inter',
   );
+  static final inter600Style20 = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.w600,
+    color: AppColors.lightwhite,
+    fontFamily: 'Inter',
+  );
 }
