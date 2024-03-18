@@ -20,7 +20,7 @@ class SignInView extends StatelessWidget {
       body: Stack(
         fit: StackFit.expand,
         children: [
-          Image.asset(fit: BoxFit.cover, Assets.imagesBackgroundImage),
+          Image.asset(fit: BoxFit.cover, Assets.imagesMaskGroup),
           Positioned(
               child: Center(
                   child: SizedBox(

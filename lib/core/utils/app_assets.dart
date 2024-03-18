@@ -13,6 +13,10 @@ class Assets {
   /// assests/images/icon.svg
   static const String imagesIcon = "assests/images/icon.svg";
 
+  /// Assets for imagesMaskGroup
+  /// assests/images/Mask_group.png
+  static const String imagesMaskGroup = "assests/images/Mask_group.png";
+
   /// Assets for imagesRose
   /// assests/images/rose.svg
   static const String imagesRose = "assests/images/rose.svg";

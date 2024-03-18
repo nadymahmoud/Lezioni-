@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lezioni/core/functions/navigation.dart';
 import 'package:lezioni/core/utils/app_colors.dart';
-import 'package:lezioni/core/utils/app_strings.dart';
 
 class AlreadyHaveAccountWidget extends StatelessWidget {
   const AlreadyHaveAccountWidget({
