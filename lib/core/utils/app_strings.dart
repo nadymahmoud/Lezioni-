@@ -16,5 +16,8 @@ abstract class AppStrings {
 
       signInAccount = 'S I G N  I N  A C C O U N T',
       dontHaveAnAccount = "Don't have an account? ",
-      createOneNow = 'Create One Now';
+      createOneNow = 'Create One Now',
+//!loading your sanctum
+
+      loadingYourSanctum = 'L O A D I N G  Y O U R  S A N C T U M';
 }

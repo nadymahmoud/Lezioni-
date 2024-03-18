@@ -66,6 +66,8 @@ class CreateAccountView extends StatelessWidget {
                   height: 11,
                 ),
                 CustomTextFieldWidget(
+                  obscureText: true,
+                  obscuringCharacter: '*',
                   suffixIcon: IconButton(
                       onPressed: () {},
                       icon: SvgPicture.asset(Assets.imagesShowPassword)),

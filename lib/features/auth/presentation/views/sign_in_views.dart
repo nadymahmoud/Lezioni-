@@ -55,6 +55,8 @@ class SignInView extends StatelessWidget {
                   height: 11,
                 ),
                 CustomTextFieldWidget(
+                  obscureText: true,
+                  obscuringCharacter: '*',
                   suffixIcon: IconButton(
                       onPressed: () {},
                       icon: SvgPicture.asset(Assets.imagesShowPassword)),
@@ -63,8 +65,13 @@ class SignInView extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                const CreateAndSignInWidget(
-                  text: AppStrings.signIn,
+                GestureDetector(
+                  onTap: () {
+                    customRquiredPush(context, '/loadingView');
+                  },
+                  child: const CreateAndSignInWidget(
+                    text: AppStrings.signIn,
+                  ),
                 ),
                 const SizedBox(
                   height: 20,

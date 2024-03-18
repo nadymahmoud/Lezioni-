@@ -5,15 +5,24 @@ import 'package:lezioni/core/utils/app_text_style.dart';
 import 'package:lezioni/features/auth/presentation/views/create_account_view.dart';
 
 class CustomTextFieldWidget extends StatelessWidget {
-  const CustomTextFieldWidget({super.key, this.hintText, this.suffixIcon});
+  const CustomTextFieldWidget(
+      {super.key,
+      this.hintText,
+      this.suffixIcon,
+      this.obscureText,
+      this.obscuringCharacter});
   final String? hintText;
   final Widget? suffixIcon;
+  final bool? obscureText;
+  final String? obscuringCharacter;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: 519,
       height: 60,
       child: TextField(
+        obscureText: obscureText ?? false,
+        obscuringCharacter: obscuringCharacter ?? '•',
         decoration: InputDecoration(
           suffixIcon: suffixIcon,
           filled: true,
