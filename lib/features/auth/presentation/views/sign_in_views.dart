@@ -22,70 +22,71 @@ class SignInView extends StatelessWidget {
         children: [
           Image.asset(fit: BoxFit.cover, Assets.imagesMaskGroup),
           Positioned(
-              child: Center(
-                  child: SizedBox(
-            width: 519,
-            child: ListView(
-              shrinkWrap: true,
-              children: [
-                const GradientTextWidget(
-                  text: AppStrings.signInAccount,
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  AppStrings.emailAddress,
-                  style: CustomTextStyle.exo600Style16,
-                ),
-                const SizedBox(
-                  height: 11,
-                ),
-                const CustomTextFieldWidget(
-                  hintText: AppStrings.exampleEmail,
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  AppStrings.password,
-                  style: CustomTextStyle.exo600Style16,
-                ),
-                const SizedBox(
-                  height: 11,
-                ),
-                CustomTextFieldWidget(
-                  obscureText: true,
-                  obscuringCharacter: '*',
-                  suffixIcon: IconButton(
-                      onPressed: () {},
-                      icon: SvgPicture.asset(Assets.imagesShowPassword)),
-                  hintText: AppStrings.examplePassword,
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                GestureDetector(
-                  onTap: () {
-                    customRquiredPush(context, '/loadingView');
-                  },
-                  child: const CreateAndSignInWidget(
-                    text: AppStrings.signIn,
+            child: Center(
+                child: SizedBox(
+              width: 519,
+              child: ListView(
+                shrinkWrap: true,
+                children: [
+                  const GradientTextWidget(
+                    text: AppStrings.signInAccount,
                   ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                AlreadyHaveAccountWidget(
-                  onTap: () {
-                    customRquiredPush(context, '/');
-                  },
-                  text1: AppStrings.dontHaveAnAccount,
-                  text2: AppStrings.createOneNow,
-                ),
-              ],
-            ),
-          )))
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Text(
+                    AppStrings.emailAddress,
+                    style: CustomTextStyle.exo600Style16,
+                  ),
+                  const SizedBox(
+                    height: 11,
+                  ),
+                  const CustomTextFieldWidget(
+                    hintText: AppStrings.exampleEmail,
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Text(
+                    AppStrings.password,
+                    style: CustomTextStyle.exo600Style16,
+                  ),
+                  const SizedBox(
+                    height: 11,
+                  ),
+                  CustomTextFieldWidget(
+                    obscureText: true,
+                    obscuringCharacter: '*',
+                    suffixIcon: IconButton(
+                        onPressed: () {},
+                        icon: SvgPicture.asset(Assets.imagesShowPassword)),
+                    hintText: AppStrings.examplePassword,
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      customRquiredPush(context, '/loadingView');
+                    },
+                    child: const CreateAndSignInWidget(
+                      text: AppStrings.signIn,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  AlreadyHaveAccountWidget(
+                    onTap: () {
+                      customRquiredPush(context, '/');
+                    },
+                    text1: AppStrings.dontHaveAnAccount,
+                    text2: AppStrings.createOneNow,
+                  ),
+                ],
+              ),
+            )),
+          )
         ],
       ),
     );
