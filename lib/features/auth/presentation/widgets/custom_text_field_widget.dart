@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:lezioni/core/utils/app_colors.dart';
 import 'package:lezioni/core/utils/app_strings.dart';
 import 'package:lezioni/core/utils/app_text_style.dart';
-import 'package:lezioni/features/auth/presentation/views/create_account_view.dart';
 
 class CustomTextFieldWidget extends StatelessWidget {
   const CustomTextFieldWidget(

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:lezioni/core/utils/app_colors.dart';
-import 'package:lezioni/core/utils/app_strings.dart';
 import 'package:lezioni/core/utils/app_text_style.dart';
 
 class CreateAndSignInWidget extends StatelessWidget {
