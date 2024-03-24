@@ -19,5 +19,13 @@ abstract class AppStrings {
       createOneNow = 'Create One Now',
 //!loading your sanctum
 
-      loadingYourSanctum = 'L O A D I N G  Y O U R  S A N C T U M';
+      loadingYourSanctum = 'L O A D I N G  Y O U R  S A N C T U M',
+      //!home Strings
+      welcomeToYourSanctum = 'Welcome to your sanctum!',
+      profileName = 'Gurinder Singh',
+      liveMeditation = 'LIVE MEDITATION',
+      monographs = 'MONOGRAPHS',
+      cyclesUntilInitiation = 'CYCLES UNTIL INITIATION',
+      communityEvents = 'COMMUNITY EVENTS',
+      summerSolstice = 'SUMMER SOLSTICE';
 }
