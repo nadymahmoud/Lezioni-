@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.2
+  device_preview: ^1.1.0
   flutter:
     sdk: flutter
   flutter_svg: ^2.0.10+1
@@ -67,8 +68,8 @@ flutter:
     - family: Inter
       fonts:
         - asset: assests/fonts/Inter-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
+    #       - asset: fonts/Schyler-Italic.ttf
+    #         style: italic
     - family: Exo
       fonts:
         - asset: assests/fonts/Exo-Regular.ttf
